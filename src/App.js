@@ -12,7 +12,7 @@ import {normalizePageNames} from './utils/helpers';
 
 function App() {
   const [activePage, setActivePage] = useState('about');
-
+ 
   return (
     <Container fluid>
       <Header setActivePage={setActivePage} activePage={activePage}/>

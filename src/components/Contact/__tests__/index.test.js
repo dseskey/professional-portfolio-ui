@@ -19,7 +19,7 @@ describe('Contact component', () =>{
 describe('Contact header is visible', () => {
     it('shows Contact header', () => {
         const {getByTestId} = render(<Contact/>);
-        expect(getByTestId('contact-form-header')).toHaveTextContent('Contact me');
+        expect(getByTestId('contact-form-header')).toHaveTextContent('Contact Me');
     });
 });
 
