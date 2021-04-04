@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+#navigation-bar {
+  background-color: #5C80BC;
+  color: #DCE0D9;
+  /* height: 4em; */
+}
+
+#name-container{
+  text-align: Left;
+  font-weight: 1000;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+.activeSection{
+  color: red;
+}
+
+.inactiveSection{
+  color: black;
+}
+

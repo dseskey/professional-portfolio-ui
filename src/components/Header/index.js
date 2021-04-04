@@ -1,10 +1,11 @@
 import React from 'react';
-
-function Header(){
+import {Col, Row} from 'react-bootstrap';
+import Navigation from '../Navigation';
+function Header({setActivePage, activePage}){
     return(
-        <section>
-            Header Placeholder
-        </section>
+        <Row data-testid='header-row' id='header'>
+            <Navigation setActivePage={setActivePage} activePage={activePage}/>
+        </Row>
     )
 }
 

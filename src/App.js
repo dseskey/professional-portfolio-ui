@@ -1,11 +1,16 @@
 import './App.css';
+import React, {useState} from 'react';
 
+import { Container, Row, Col } from 'react-bootstrap';
+import Header from './components/Header';
 
 function App() {
-  return (
-    <div className="App">
+  const [activePage, setActivePage] = useState('about');
 
-    </div>
+  return (
+    <Container fluid>
+      <Header setActivePage={setActivePage} activePage={activePage}/>
+    </Container>
   );
 }
 
