@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Col, Navbar, Nav } from 'react-bootstrap';
+import {capitalizeFirstLetter} from '../../utils/helpers';
 function Navigation(props) {
     const {
         setActivePage,
         activePage
       } = props;   
       
+      useEffect(() => {
+        document.title = 'Dan Seskey - ' + capitalizeFirstLetter(activePage);
+      }, [activePage]);
+
     return (
         <Col data-testid="navigation-bar" id="navigation-bar">
         <Navbar expand="lg" >

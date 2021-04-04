@@ -13,7 +13,7 @@ exports[`Contact component matches snapshot 1`] = `
       <h2
         data-testid="contact-form-header"
       >
-        Contact me
+        Contact Me
       </h2>
     </div>
     <div
@@ -77,7 +77,6 @@ exports[`Contact component matches snapshot 1`] = `
         </div>
         <div
           class="form-row"
-          data-testid="contact-error-container"
         />
         <button
           class="btn btn-primary"
