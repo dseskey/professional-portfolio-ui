@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Col, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import React from 'react';
+import { Col, Navbar, Nav } from 'react-bootstrap';
 function Navigation(props) {
     const {
         setActivePage,
