@@ -3,16 +3,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 import personalImage from '../../assets/img/baseballTonight.jpg';
 function About(){
     return(
-        <Container id='about-container'>
+        <Container fluid data-testid='about-container' id='about-container'>
             <Row className='aboutTextSection'>
+                <Col >
                 My name is Daniel Seskey and I am a graduate of Pennsylvania State University where I completed the Master of Software Engineering degree in August 2016. Prior to studying at Penn State, I completed a BSE in Computer Engineering with a focus in Nuclear Engineering at the University of Pittsburgh.
+                </Col>
             </Row>
             <Row >
                 <section id='about-image-section'>
                     <img src={personalImage} style={{ width: "50%" }} alt="personal image" />
                 </section>
             </Row>
-            <Row className='aboutTextSection'>
+            <Row className='aboutTextSection' data-testid='about-text-section'>
                 <section>
                     Growing up in Pittsburgh, I had the uncommon privilege to witness firsthand the city's transformation from a heavy industrial town to a technology and medical innovation hub. This opportunity allowed me to participate in numerous activities growing up within the public school system such as attending summer architecture courses at Carnegie Mellon University, participating in Pitt's and CMU's educational robotics program, along with other technology based programs. The culmination of these opportunities led me into the world of engineering.            
                 </section>
