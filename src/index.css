@@ -46,6 +46,7 @@ code {
   margin-right: 2em !important;
   margin-bottom: 2em !important;
   text-align:left !important;
+  
 }
 
 .pageHeader{
@@ -79,6 +80,10 @@ code {
   margin-bottom: 2em;
 }
 
+#contact-container{
+  height: 100vh
+}
+
 #submit-contact-button{
   margin-top: 1em;
   margin-bottom: 1em;
@@ -98,4 +103,20 @@ code {
 .socialFooterIconContainer{
   padding-left: 2em;
   padding-right: 2em;
+}
+
+#resume-section-description{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.resumeSkillTables{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.skillTableHeader{
+  font-weight: 600;
+  color: orange;
 }
