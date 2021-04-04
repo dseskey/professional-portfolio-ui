@@ -9,10 +9,10 @@ exports[`Footer component matches snapshot DOM node structure 1`] = `
   >
     <div
       class="col"
-      style="text-align: center;"
     >
       <span
         class="socialFooterIconContainer"
+        name="linkedin"
       >
         <a
           alt="linkedin"
@@ -63,6 +63,7 @@ exports[`Footer component matches snapshot DOM node structure 1`] = `
       <span
         class="socialFooterIconContainer"
         data-testid="github-icon"
+        name="github"
       >
         <a
           alt="github"
