@@ -54,13 +54,12 @@ function Project() {
                 {projectJson.projects.map((project) => {
                     return (
                         <Col
-                            data-projectname={`${project.title}`} 
-                            onMouseEnter={(event) => handleCardHoverFocus(event)}
-                            onMouseLeave={(event) => handleCardHoverFocus(event)}
                             data-testid={`${project.title}-col`} key={project.title + '-col'}
                             md={4}>
                             <Card
-                                
+                            data-projectname={`${project.title}`}
+                                onMouseEnter={(event) => handleCardHoverFocus(event)}
+                                onMouseLeave={(event) => handleCardHoverFocus(event)}
                                 style={{ ...cardStyles.cardContainerStyle, backgroundImage: `url(${project.imageSRC})` }}
                                 data-testid={`${project.title}-card`} key={project.title + '-card'}>
                                 {hoveredCard === `${project.title}-card` &&
