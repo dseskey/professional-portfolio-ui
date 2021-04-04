@@ -44,6 +44,7 @@ code {
 .pagesParentContainer{
   margin-left: 2em !important;
   margin-right: 2em !important;
+  margin-bottom: 2em !important;
   text-align:left !important;
 }
 
@@ -87,4 +88,14 @@ code {
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+#footer-container{
+  background:#032B43;
+  padding-bottom: 2em;
+}
+
+.socialFooterIconContainer{
+  padding-left: 2em;
+  padding-right: 2em;
 }

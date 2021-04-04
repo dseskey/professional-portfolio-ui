@@ -7,6 +7,7 @@ import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 import {normalizePageNames} from './utils/helpers';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         {normalizePageNames(activePage) === 'contact' &&  <Contact/> }
         {normalizePageNames(activePage) === 'resume' &&  <Resume/> }
       </Row>
+      <Footer/>
     </Container>
   );
 }
