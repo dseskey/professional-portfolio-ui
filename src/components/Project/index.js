@@ -41,7 +41,7 @@ function Project() {
             <Row className="pageHeader">
                 <h2 data-testid='project-section-header'>My Projects</h2>
             </Row>
-            <Row id='projects-card-row'>
+            <Row data-testid='projects-card-row' id='projects-card-row'>
                 {projectJson.projects.map((project) => {
                     return (
                         <Col
