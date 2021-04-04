@@ -6,6 +6,7 @@ import {SocialIcon} from 'react-social-icons';
 
 function Project() {
     const [hoveredCard, setHoveredCard] = useState('');
+    const [iconHover, setIconHover] = useState('');
     /*--Functions to generate each part of the project card. Although this can be done straight in the main return, this makes it easier to work with and triage--*/
     function generateCardTitle(project) {
         const { title } = project;
@@ -20,11 +21,19 @@ function Project() {
         )
     }
 
+    function handleIconMouseEvents(event, socialIconName){
+        if(event.type==='mouseover'){
+            setIconHover(socialIconName);
+        }else{
+            setIconHover('');
+        }
+    }
+
     function generateURLs(urlObj, title){
         const {type, url} = urlObj
         return (
-            <Col key={`${title}-${type}-urlCol`}>
-                <SocialIcon key={`${title}-${type}-social-icon`} network={type} url={url} bgColor='#DCE0D9' alt={type} />
+            <Col key={`${title}-${type}-urlCol`} >
+                <SocialIcon key={`${title}-${type}-social-icon`}  onMouseOut={(event)=>handleIconMouseEvents(event)} onMouseOver={(event) => {handleIconMouseEvents(event,`${title}-${type}`)}} fgColor={iconHover===`${title}-${type}` ? '#007bff' : ''} network={type} url={url} bgColor={iconHover===`${title}-${type}` ? '#FFF' : '#DCE0D9'} alt={type} />
             </Col>
         )
     }

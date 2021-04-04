@@ -16,11 +16,14 @@ function Footer() {
         <Row data-testid='footer-row' id='footer-container'>
             <Col>
                 <span name='linkedin' className='socialFooterIconContainer' >
-                    {console.log(iconHover)}
-                    <SocialIcon onMouseOut={(event) => {handleMouseOutIcon(event)}} onMouseOver={(event) => {handleMouseOverIcon('linkedin')}} network='linkedin' url='https://www.linkedin.com/in/danielseskey' fgColor={iconHover==='linkedin' ? '#007bff' : ''} bgColor={'#DCE0D9'} alt="linkedin"/>
+                    <SocialIcon onMouseOut={(event) => {handleMouseOutIcon(event)}} 
+                        onMouseOver={(event) => {handleMouseOverIcon('linkedin')}} 
+                        network='linkedin' url='https://www.linkedin.com/in/danielseskey' 
+                        fgColor={iconHover==='linkedin' ? '#007bff' : ''} bgColor={iconHover==='linkedin' ? '#FFF' : '#DCE0D9'} alt="linkedin"/>
                 </span>
                 <span name='github' data-testid='github-icon' className='socialFooterIconContainer'>
-                    <SocialIcon onMouseOut={(event) => {handleMouseOutIcon(event)}} onMouseOver={(event) => {handleMouseOverIcon('github')}} network='github' url='https://github.com/dseskey' fgColor={iconHover==='github' ? '#007bff' : ''} bgColor='#DCE0D9' alt="github" />
+                    <SocialIcon onMouseOut={(event) => {handleMouseOutIcon(event)}} onMouseOver={(event) => {handleMouseOverIcon('github')}} network='github' url='https://github.com/dseskey' 
+                    fgColor={iconHover==='github' ? '#007bff' : ''} bgColor={iconHover==='github' ? '#FFF' : '#DCE0D9'} alt="github" />
                 </span>
             </Col>
         </Row>
