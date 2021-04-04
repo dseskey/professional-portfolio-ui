@@ -15,7 +15,7 @@ function App() {
   return (
     <Container fluid>
       <Header setActivePage={setActivePage} activePage={activePage}/>
-      <Row>
+      <Row id='sections-container'>
         {normalizePageNames(activePage) === 'about' && <About/> }
         {normalizePageNames(activePage) === 'portfolio' && <Project/> }
         {normalizePageNames(activePage) === 'contact' &&  <Contact/> }
