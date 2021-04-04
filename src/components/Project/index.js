@@ -1,51 +1,90 @@
-import React from 'react';
-import { Container, Row, Col, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import projectJson from '../../assets/json/projects.json';
+import cardStyles from './cardStyles';
+import {SocialIcon} from 'react-social-icons';
+
 function Project() {
+    const [hoveredCard, setHoveredCard] = useState('');
+    /*--Functions to generate each part of the project card. Although this can be done straight in the main return, this makes it easier to work with and triage--*/
+    function generateCardTitle(project) {
+        const { title } = project;
+        return (
+            <Card.Title style={cardStyles.cardHeaderStyle} data-testid={`${title}-card-title`} key={title + '-card-title'}>{title}</Card.Title>
+        )
+    }
+    function generateCardDescription(project) {
+        const { description } = project;
+        return (
+            <Card.Text style={cardStyles.cardProjectDescriptionStyle}> {description}</Card.Text>
+        )
+    }
+
+    function generateURLs(urlObj, title){
+        const {type, url} = urlObj
+        return (
+            <Col key={`${title}-${type}-urlCol`}>
+                <SocialIcon key={`${title}-${type}-social-icon`} network={type} url={url} bgColor='#DCE0D9' alt={type} />
+            </Col>
+        )
+    }
+
+    function handleCardHoverFocus(event) {
+        if (event.type === 'mouseenter') {
+            setHoveredCard(`${event.target.getAttribute('data-projectname')}-card`);
+        } else {
+            setHoveredCard('');
+        }
+    }
     return (
         <Container fluid data-testid='project-container' id='project-container' className='pagesParentContainer'>
             <Row className="pageHeader">
                 <h2 data-testid='project-section-header'>My Projects</h2>
             </Row>
-            <Row>
+            <Row id='projects-card-row'>
                 {projectJson.projects.map((project) => {
                     return (
-                        <Col data-testid={`${project.title}-col`} key={project.title + '-col'}>
-                            <Card data-testid={`${project.title}-card`} key={project.title + '-card'} style={{ width: '18rem' }}>
-                                {project.imageSRC &&
-                                    <Card.Img  data-testid={`${project.title}-card-image`} key={project.title + '-card-image'} variant="top" src={project.imageSRC} />
-                                }
-                                <Card.Body key={project.title + '-card-body-content'}>
-                                    {project.title &&
-                                        <Card.Title data-testid={`${project.title}-card-title`} key={project.title + '-card-title'}>{project.title}</Card.Title>
-                                    }
-                                    {project.description &&
-                                        <Card.Text data-testid={`${project.title}-card-text`} key={project.title + '-col'}>
-                                            {project.description}
-                                        </Card.Text>
+                        <Col
+                            data-projectname={`${project.title}`} 
+                            onMouseEnter={(event) => handleCardHoverFocus(event)}
+                            onMouseLeave={(event) => handleCardHoverFocus(event)}
+                            data-testid={`${project.title}-col`} key={project.title + '-col'}
+                            md={4}>
+                            <Card
+                                
+                                style={{ ...cardStyles.cardContainerStyle, backgroundImage: `url(${project.imageSRC})` }}
+                                data-testid={`${project.title}-card`} key={project.title + '-card'}>
+                                {hoveredCard === `${project.title}-card` &&
+                                    <div style={cardStyles.cardContainerStyleHover}>
+                                        <Card.Body key={project.title + '-card-body-content'}>
+                                            {project.title &&
+                                                generateCardTitle(project)
+                                            }
+                                            {project.description &&
+                                                generateCardDescription(project)
+                                            }
+                                            <Row style={{textAlign: 'center'}}>
+                                                {
+                                                    project.urls &&
+                                                    project.urls.map((urlObj) => {
+                                                        return generateURLs(urlObj,project.title)
+                                                    })
+                                                }
+                                            </Row>
 
-                                    }
-                                </Card.Body>
-                                {/* <ListGroup data-testid={`${project.title}-tech-list`} key={project.title + '-tech-list'} className="list-group-flush">
-                                    <ListGroupItem>Cras justo odio</ListGroupItem>
-                                    <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                                    <ListGroupItem>Vestibulum at eros</ListGroupItem>
-                                </ListGroup> */}
-                                <Card.Body data-testid={`${project.title}-card-body-links`} key={project.title + '-card-body-links'}>
-                                    {project.githubURL &&
-                                        <Card.Link href={project.githubURL}>Github</Card.Link>
-                                    }
-                                    {project.appURL &&
-                                        <Card.Link href={project.appURL}>Application Page</Card.Link>
-                                    }
-                                </Card.Body>
+                                        </Card.Body>
+
+                                    </div>
+                                } 
                             </Card>
+                            
                         </Col>
+
                     )
                 })}
             </Row>
 
-        </Container>
+        </Container >
     )
 }
 

@@ -3,8 +3,53 @@
         {
             "title": "Travelers Mobile",
             "description": "The Travelers mobile application is a React Native based application leveraging AWS and on-prem infrastructure.",
-            "githubURL":null,
-            "appURL": "https://apps.apple.com/us/app/travelers-mobile/id354604876#?platform=iphone",
+            "urls": [
+                {
+                    "type": "github",
+                    "url":"http://www.github.com"
+                },
+                {
+                    "type": "itunes",
+                    "url": "https://apps.apple.com/us/app/travelers-mobile/id354604876#?platform=iphone"
+                }
+            ],
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+        },
+        {
+            "title": "Noggle Boggle Trivia and Quiz Generator",
+            "description": "The Noggle Boggle Trivia and Quiz Generator is a websocket backend service that can be paired with a third party UI to genearte and drive trivia games or quizzes.",
+            "urls": [
+                {
+                    "type": "github",
+                    "url":"https://github.com/dseskey/noggleboggle-aws"
+                }
+            ],
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+        },
+        {
+            "title": "Single Plant Irrigation System (SPIS)",
+            "description": "Christopher Lukas, Brent Baade and Daniel Seskey completed the Single Plant Irrigation System as a project for the Embedded Systems Course at the University of Pittsburgh.",
+            "urls": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=ruhGDVa6X80"
+                }
+            ],
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+        },
+        {
+            "title": "Photography Portfolio",
+            "description": "This is a sample React Application demoing the basics of React including hooks, actions, and testing.",
+            "urls": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/dseskey/photo-port"
+                },
+                {
+                    "type": "sharethis",
+                    "url": "https://dseskey.github.io/photo-port/"
+                }
+            ],
             "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
         }
     ]
