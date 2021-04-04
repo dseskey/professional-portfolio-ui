@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resume component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    class="pagesParentContainer container-fluid"
+    data-testid="resume-container"
+    id="resume-container"
+  >
+    <div
+      class="pageHeader row"
+    >
+      <h2
+        data-testid="resume-section-header"
+      >
+        My Resume
+      </h2>
+    </div>
+    <div
+      class="row"
+      id="resume-section-description"
+    >
+      The tables below display various technologies, infrastructures, etc that I have worked with. You can also download a PDF version of my 
+      <a
+        href="SeskeyResume.pdf"
+        rel="noreferrer"
+        target="_blank"
+      >
+         resume
+      </a>
+      .
+    </div>
+    <div
+      class="row"
+      data-testid="resume-proficiencies-section"
+      id="resume-proficiencies-section"
+    >
+      <div
+        class="resumeSkillTable col"
+        data-testid="Architecture-table"
+      >
+        <div
+          class="card"
+          style="width: 18rem; margin-top: 1em; margin-bottom: 1em; text-align: center; background: grey; color: black;"
+        >
+          <div
+            class="skillTableHeader card-header"
+          >
+            Architecture
+          </div>
+          <div
+            class="list-group list-group-flush"
+            data-testid="Architecture-list-group"
+          >
+            <div
+              class="list-group-item"
+            >
+              Software Architecture Professional Certificate (CMU SEI)
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Three Tier Architecture
+            </div>
+            <div
+              class="list-group-item"
+            >
+              AWS Architecture
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Event Driven Architecture
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Mobile Architecture
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Data Architecture
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Security Architecture
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="resumeSkillTable col"
+        data-testid="Frontend Development-table"
+      >
+        <div
+          class="card"
+          style="width: 18rem; margin-top: 1em; margin-bottom: 1em; text-align: center; background: grey; color: black;"
+        >
+          <div
+            class="skillTableHeader card-header"
+          >
+            Frontend Development
+          </div>
+          <div
+            class="list-group list-group-flush"
+            data-testid="Frontend Development-list-group"
+          >
+            <div
+              class="list-group-item"
+            >
+              React
+            </div>
+            <div
+              class="list-group-item"
+            >
+              React Native
+            </div>
+            <div
+              class="list-group-item"
+            >
+              HTML
+            </div>
+            <div
+              class="list-group-item"
+            >
+              CSS
+            </div>
+            <div
+              class="list-group-item"
+            >
+              jQuery
+            </div>
+            <div
+              class="list-group-item"
+            >
+              JavaScript
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Vue
+            </div>
+            <div
+              class="list-group-item"
+            >
+              JSP
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Angular
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="resumeSkillTable col"
+        data-testid="Backend Development-table"
+      >
+        <div
+          class="card"
+          style="width: 18rem; margin-top: 1em; margin-bottom: 1em; text-align: center; background: grey; color: black;"
+        >
+          <div
+            class="skillTableHeader card-header"
+          >
+            Backend Development
+          </div>
+          <div
+            class="list-group list-group-flush"
+            data-testid="Backend Development-list-group"
+          >
+            <div
+              class="list-group-item"
+            >
+              Node.js
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Java
+            </div>
+            <div
+              class="list-group-item"
+            >
+              C#
+            </div>
+            <div
+              class="list-group-item"
+            >
+              CSS
+            </div>
+            <div
+              class="list-group-item"
+            >
+              jQuery
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Vue
+            </div>
+            <div
+              class="list-group-item"
+            >
+              JSP
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Angular
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="resumeSkillTable col"
+        data-testid="Infrastructure Databases-table"
+      >
+        <div
+          class="card"
+          style="width: 18rem; margin-top: 1em; margin-bottom: 1em; text-align: center; background: grey; color: black;"
+        >
+          <div
+            class="skillTableHeader card-header"
+          >
+            Infrastructure Databases
+          </div>
+          <div
+            class="list-group list-group-flush"
+            data-testid="Infrastructure Databases-list-group"
+          >
+            <div
+              class="list-group-item"
+            >
+              AWS
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Pivotal Cloud Foundry
+            </div>
+            <div
+              class="list-group-item"
+            >
+              MuleSoft
+            </div>
+            <div
+              class="list-group-item"
+            >
+              OpenShift
+            </div>
+            <div
+              class="list-group-item"
+            >
+              MongoDB
+            </div>
+            <div
+              class="list-group-item"
+            >
+              Cassandra
+            </div>
+            <div
+              class="list-group-item"
+            >
+              SQL
+            </div>
+            <div
+              class="list-group-item"
+            >
+              MySQL
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
