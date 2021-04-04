@@ -41,6 +41,17 @@ code {
   color: #DCE0D9;
 }
 
+.pagesParentContainer{
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+  text-align:left !important;
+}
+
+.pageHeader{
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+
 #about-container{
   text-align: left;
   margin-left: 2em;
@@ -58,4 +69,22 @@ code {
 
 #about-image-section{
   text-align: center;
+}
+
+#contact-form-row{
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#submit-contact-button{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.errorContainer{
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }

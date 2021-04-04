@@ -3,7 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import personalImage from '../../assets/img/baseballTonight.jpg';
 function About(){
     return(
-        <Container fluid data-testid='about-container' id='about-container'>
+        <Container fluid data-testid='about-container' id='about-container' className='pagesParentContainer'>
+            <Row className="pageHeader">
+                <h2 data-testid='about-section-header'>About Me</h2>
+            </Row>
             <Row className='aboutTextSection'>
                 <Col >
                 My name is Daniel Seskey and I am a graduate of Pennsylvania State University where I completed the Master of Software Engineering degree in August 2016. Prior to studying at Penn State, I completed a BSE in Computer Engineering with a focus in Nuclear Engineering at the University of Pittsburgh.
@@ -11,7 +14,7 @@ function About(){
             </Row>
             <Row >
                 <section id='about-image-section'>
-                    <img src={personalImage} style={{ width: "50%" }} alt="personal image" />
+                    <img src={personalImage} style={{ width: "50%" }} alt="engineer" />
                 </section>
             </Row>
             <Row className='aboutTextSection' data-testid='about-text-section'>

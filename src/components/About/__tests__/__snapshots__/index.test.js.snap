@@ -3,10 +3,19 @@
 exports[`About component matches snapshot DOM node structure 1`] = `
 <DocumentFragment>
   <div
-    class="container-fluid"
+    class="pagesParentContainer container-fluid"
     data-testid="about-container"
     id="about-container"
   >
+    <div
+      class="pageHeader row"
+    >
+      <h2
+        data-testid="about-section-header"
+      >
+        About Me
+      </h2>
+    </div>
     <div
       class="aboutTextSection row"
     >
@@ -23,7 +32,7 @@ exports[`About component matches snapshot DOM node structure 1`] = `
         id="about-image-section"
       >
         <img
-          alt="personal image"
+          alt="engineer"
           src="baseballTonight.jpg"
           style="width: 50%;"
         />
