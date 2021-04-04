@@ -34,7 +34,7 @@ function Contact() {
     return (
         <Container fluid data-testid='contact-container' id='contact-container' className='pagesParentContainer'>
             <Row className='pageHeader'>
-                <h2 data-testid='contact-form-header'>Contact me</h2>
+                <h2 data-testid='contact-form-header'>Contact Me</h2>
             </Row>
             <Row id='contact-form-row'>
                 <Form>

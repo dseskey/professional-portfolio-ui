@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import personalImage from '../../assets/img/baseballTonight.jpg';
 function About(){
     return(
@@ -8,9 +8,9 @@ function About(){
                 <h2 data-testid='about-section-header'>About Me</h2>
             </Row>
             <Row className='aboutTextSection'>
-                <Col >
+                <section >
                 My name is Daniel Seskey and I am a graduate of Pennsylvania State University where I completed the Master of Software Engineering degree in August 2016. Prior to studying at Penn State, I completed a BSE in Computer Engineering with a focus in Nuclear Engineering at the University of Pittsburgh.
-                </Col>
+                </section>
             </Row>
             <Row >
                 <section id='about-image-section'>
