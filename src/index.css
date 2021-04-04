@@ -43,6 +43,8 @@ code {
 
 #about-container{
   text-align: left;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .aboutTextSection{
