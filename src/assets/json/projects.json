@@ -13,7 +13,7 @@
                     "url": "https://apps.apple.com/us/app/travelers-mobile/id354604876#?platform=iphone"
                 }
             ],
-            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/trvMobileApp.jpeg"
         },
         {
             "title": "Noggle Boggle Trivia and Quiz Generator",
@@ -24,7 +24,7 @@
                     "url":"https://github.com/dseskey/noggleboggle-aws"
                 }
             ],
-            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/IMG_1168.jpeg"
         },
         {
             "title": "Single Plant Irrigation System (SPIS)",
@@ -35,7 +35,7 @@
                     "url": "https://www.youtube.com/watch?v=ruhGDVa6X80"
                 }
             ],
-            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/spis.jpg"
         },
         {
             "title": "Photography Portfolio",
@@ -50,7 +50,7 @@
                     "url": "https://dseskey.github.io/photo-port/"
                 }
             ],
-            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg"
+            "imageSRC":"https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/photo-port.jpg"
         }
     ]
 }
