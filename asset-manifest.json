@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portoflio/static/css/main.1eae0243.chunk.css",
-    "main.js": "/portoflio/static/js/main.b5d826d6.chunk.js",
-    "main.js.map": "/portoflio/static/js/main.b5d826d6.chunk.js.map",
+    "main.js": "/portoflio/static/js/main.d21842a3.chunk.js",
+    "main.js.map": "/portoflio/static/js/main.d21842a3.chunk.js.map",
     "runtime-main.js": "/portoflio/static/js/runtime-main.590a2e6a.js",
     "runtime-main.js.map": "/portoflio/static/js/runtime-main.590a2e6a.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/portoflio/static/css/2.4c97ca4f.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.49bf2cb7.chunk.js",
     "static/css/main.1eae0243.chunk.css",
-    "static/js/main.b5d826d6.chunk.js"
+    "static/js/main.d21842a3.chunk.js"
   ]
 }
