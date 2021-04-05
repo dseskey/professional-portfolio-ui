@@ -5,6 +5,8 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary-font-color:#DCE0D9;
+  --primary-background-color: #032B43;
 }
 
 code {
@@ -18,9 +20,10 @@ code {
   background-position: center;
 }
 
+
 #navigation-bar {
   /* background-color: #5C80BC; */
-  color: #DCE0D9;
+  color: var(--primary-font-color);
   text-align: center;
   /* height: 4em; */
 }
@@ -33,11 +36,11 @@ code {
 }
 
 .navbar-toggler{
-  background: white;
+  background: white !important;
 
 }
 .navbar-brand{
-  color: #DCE0D9 !important;
+  color: var(--primary-font-color) !important;
   font-size: 2em !important;
 }
 
@@ -49,13 +52,13 @@ code {
 }
 
 .inactiveSection{
-  color:#DCE0D9;
+  color: var(--primary-font-color);
   font-weight: 600;
 }
 
 #sections-container{
-  background:#032B43; 
-  color: #DCE0D9;
+  background: var(--primary-background-color); 
+  color: var(--primary-font-color);
 }
 
 .pagesParentContainer{
@@ -81,6 +84,8 @@ code {
 .aboutTextSection{
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-right: 1em !important;
+  margin-left: 1em !important;
   font-weight: 500;
   font-size:medium;
 
@@ -113,7 +118,7 @@ code {
 }
 
 #footer-container{
-  background:#032B43;
+  background: var(--primary-background-color); 
   padding-bottom: 2em;
   text-align: center;
 }
@@ -126,6 +131,12 @@ code {
 #resume-section-description{
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.anchorTag{
+  padding-left: 5px;
 }
 
 .resumeSkillTables{
@@ -136,5 +147,39 @@ code {
 
 .skillTableHeader{
   font-weight: 600;
-  color: #DCE0D9;
+  color: var(--primary-font-color);
+}
+
+#project-urls-container{
+  text-align: center;
+}
+
+.card{
+  background-size: cover;
+  height: 25em;
+  margin-top: 2em; 
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card-title{
+  color: var(--primary-font-color);
+  font-weight: 800;
+  text-align: center; 
+}
+
+#project-card-description{
+  color: black;
+  font-size: .8em;
+}
+
+.projectHoverContainer{
+  background: grey;
+  height: 20em; 
+  margin-top: 1em;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 50px;
+  border-style: outset;
 }
