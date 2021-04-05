@@ -21,7 +21,8 @@ function About(){
                     Growing up in Pittsburgh, I had the uncommon privilege to witness firsthand the city's transformation from a heavy industrial town to a technology and medical innovation hub. This opportunity allowed me to participate in numerous activities growing up within the public school system such as attending summer architecture courses at Carnegie Mellon University, participating in Pitt's and CMU's educational robotics program, along with other technology based programs. The culmination of these opportunities led me into the world of engineering.            
                 </section>
             </Row>
-            <Row className='aboutTextSection'>
+            <Row className='aboutTextSecti
+            on'>
                 <section>
                 My interest within the field of Computer Engineering field fall in the software development life cycle, software architecutre, hardware design and testing fields. Upon completion of a software engineering course at the University of Pittsburgh, I discovered my passion for the Software Delivery Life Cycle (SDLC). This passion led me to pursue my Masters at Penn State to further understand software development and build my skillset. Software development starts with what seems to be a simple idea to solve a problem and with constant revision, component design and testing, and updates the project becomes a complex puzzle. This desire to solve puzzles pushed me into architecture design and its evolution.
                 </section>

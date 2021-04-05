@@ -5,10 +5,6 @@
             "description": "The Travelers mobile application is a React Native based application leveraging AWS and on-prem infrastructure.",
             "urls": [
                 {
-                    "type": "github",
-                    "url":"http://www.github.com"
-                },
-                {
                     "type": "itunes",
                     "url": "https://apps.apple.com/us/app/travelers-mobile/id354604876#?platform=iphone"
                 }
