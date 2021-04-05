@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import personalImage from '../../assets/img/baseballTonight.jpg';
 function About(){
     return(
         <Container fluid data-testid='about-container' id='about-container' className='pagesParentContainer'>
