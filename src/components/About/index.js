@@ -14,7 +14,7 @@ function About(){
             </Row>
             <Row >
                 <section id='about-image-section'>
-                    <img src={personalImage} style={{ width: "50%" }} alt="engineer" />
+                    <img src='https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/WCKM-35.jpeg' style={{ width: "50%" }} alt="engineer" />
                 </section>
             </Row>
             <Row className='aboutTextSection' data-testid='about-text-section'>

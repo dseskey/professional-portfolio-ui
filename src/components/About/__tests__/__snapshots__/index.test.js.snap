@@ -19,11 +19,9 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     <div
       class="aboutTextSection row"
     >
-      <div
-        class="col"
-      >
+      <section>
         My name is Daniel Seskey and I am a graduate of Pennsylvania State University where I completed the Master of Software Engineering degree in August 2016. Prior to studying at Penn State, I completed a BSE in Computer Engineering with a focus in Nuclear Engineering at the University of Pittsburgh.
-      </div>
+      </section>
     </div>
     <div
       class="row"
@@ -33,7 +31,7 @@ exports[`About component matches snapshot DOM node structure 1`] = `
       >
         <img
           alt="engineer"
-          src="baseballTonight.jpg"
+          src="https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/WCKM-35.jpeg"
           style="width: 50%;"
         />
       </section>

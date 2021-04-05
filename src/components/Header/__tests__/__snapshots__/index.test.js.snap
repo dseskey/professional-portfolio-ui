@@ -18,6 +18,7 @@ exports[`Header component matches snapshot DOM node structure 1`] = `
         <span
           class="navbar-brand"
           eventkey="about"
+          id="nav-branding-name"
         >
           Dan Seskey
         </span>
