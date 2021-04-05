@@ -11,13 +11,13 @@ function Resume() {
                 <h2 data-testid='resume-section-header'>My Resume</h2>
             </Row>
             <Row id='resume-section-description'>
-                The tables below display various technologies, infrastructures, etc that I have worked with. You can also download a PDF version of my <a href={pdfResume} rel="noreferrer"  target="_blank"> resume</a>.
+                The tables below display various technologies, infrastructures, etc that I have worked with. You can also download a PDF version of my <a className='anchorTag' href={pdfResume} rel="noreferrer"  target="_blank"> resume</a>.
             </Row>
             <Row id='resume-proficiencies-section' data-testid='resume-proficiencies-section'>
                 {skillsJson.topics.map((topic) => {
                     return (
                         <Col data-testid={`${topic.title}-table`} key={topic.title+'-table-col'} className='resumeSkillTable'>
-                            <Card key={topic.title+'-card'}style={tableStyle}>
+                            <Card key={topic.title+'-card'} style={tableStyle}>
                                 <Card.Header key={topic.title+'-card-header'} className='skillTableHeader'>{topic.title}</Card.Header>
                                 <ListGroup data-testid={`${topic.title}-list-group`} key={topic.title+'-list-group'} variant="flush">
                                     {topic.skills.map((skill) => {

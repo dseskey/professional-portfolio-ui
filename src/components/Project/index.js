@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import projectJson from '../../assets/json/projects.json';
-import cardStyles from './cardStyles';
 import {SocialIcon} from 'react-social-icons';
 
 function Project() {
@@ -11,13 +10,13 @@ function Project() {
     function generateCardTitle(project) {
         const { title } = project;
         return (
-            <Card.Title style={cardStyles.cardHeaderStyle} data-testid={`${title}-card-title`} key={title + '-card-title'}>{title}</Card.Title>
+            <Card.Title data-testid={`${title}-card-title`} key={title + '-card-title'}>{title}</Card.Title>
         )
     }
     function generateCardDescription(project) {
         const { description } = project;
         return (
-            <Card.Text style={cardStyles.cardProjectDescriptionStyle}> {description}</Card.Text>
+            <Card.Text id='project-card-description'> {description}</Card.Text>
         )
     }
 
@@ -60,10 +59,10 @@ function Project() {
                             data-projectname={`${project.title}`}
                                 onMouseEnter={(event) => handleCardHoverFocus(event)}
                                 onMouseLeave={(event) => handleCardHoverFocus(event)}
-                                style={{ ...cardStyles.cardContainerStyle, backgroundImage: `url(${project.imageSRC})` }}
+                                style={{backgroundImage: `url(${project.imageSRC})`}}
                                 data-testid={`${project.title}-card`} key={project.title + '-card'}>
                                 {hoveredCard === `${project.title}-card` &&
-                                    <div style={cardStyles.cardContainerStyleHover}>
+                                    <div className='projectHoverContainer'>
                                         <Card.Body key={project.title + '-card-body-content'}>
                                             {project.title &&
                                                 generateCardTitle(project)
@@ -71,7 +70,7 @@ function Project() {
                                             {project.description &&
                                                 generateCardDescription(project)
                                             }
-                                            <Row style={{textAlign: 'center'}}>
+                                            <Row id='project-urls-container'>
                                                 {
                                                     project.urls &&
                                                     project.urls.map((urlObj) => {

@@ -23,46 +23,46 @@ exports[`Project component matches snapshot DOM node structure 1`] = `
     >
       <div
         class="col-md-4"
-        data-projectname="Travelers Mobile"
         data-testid="Travelers Mobile-col"
       >
         <div
           class="card"
+          data-projectname="Travelers Mobile"
           data-testid="Travelers Mobile-card"
-          style="background-size: cover; height: 25em; margin: 2em 1em 2em 1em; background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg);"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/trvMobileApp.jpeg);"
         />
       </div>
       <div
         class="col-md-4"
-        data-projectname="Noggle Boggle Trivia and Quiz Generator"
         data-testid="Noggle Boggle Trivia and Quiz Generator-col"
       >
         <div
           class="card"
+          data-projectname="Noggle Boggle Trivia and Quiz Generator"
           data-testid="Noggle Boggle Trivia and Quiz Generator-card"
-          style="background-size: cover; height: 25em; margin: 2em 1em 2em 1em; background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg);"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/IMG_1168.jpeg);"
         />
       </div>
       <div
         class="col-md-4"
-        data-projectname="Single Plant Irrigation System (SPIS)"
         data-testid="Single Plant Irrigation System (SPIS)-col"
       >
         <div
           class="card"
+          data-projectname="Single Plant Irrigation System (SPIS)"
           data-testid="Single Plant Irrigation System (SPIS)-card"
-          style="background-size: cover; height: 25em; margin: 2em 1em 2em 1em; background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg);"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/spis.jpg);"
         />
       </div>
       <div
         class="col-md-4"
-        data-projectname="Photography Portfolio"
         data-testid="Photography Portfolio-col"
       >
         <div
           class="card"
+          data-projectname="Photography Portfolio"
           data-testid="Photography Portfolio-card"
-          style="background-size: cover; height: 25em; margin: 2em 1em 2em 1em; background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/trvMobileApp.jpeg);"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/photo-port.jpg);"
         />
       </div>
     </div>

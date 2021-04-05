@@ -22,6 +22,7 @@ exports[`Resume component matches snapshot DOM node structure 1`] = `
     >
       The tables below display various technologies, infrastructures, etc that I have worked with. You can also download a PDF version of my 
       <a
+        class="anchorTag"
         href="SeskeyResume.pdf"
         rel="noreferrer"
         target="_blank"
