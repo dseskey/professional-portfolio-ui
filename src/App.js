@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import { Container, Row} from 'react-bootstrap';
 import Header from './components/Header';
 import About from './components/About';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
@@ -18,7 +18,7 @@ function App() {
       <Header setActivePage={setActivePage} activePage={activePage}/>
       <Row id='sections-container'>
         {normalizePageNames(activePage) === 'about' && <About/> }
-        {normalizePageNames(activePage) === 'portfolio' && <Project/> }
+        {normalizePageNames(activePage) === 'portfolio' && <Portfolio/> }
         {normalizePageNames(activePage) === 'contact' &&  <Contact/> }
         {normalizePageNames(activePage) === 'resume' &&  <Resume/> }
       </Row>

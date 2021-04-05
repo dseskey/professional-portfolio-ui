@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    class="pagesParentContainer container-fluid"
+    data-testid="portfolio-container"
+    id="portfolio-container"
+  >
+    <div
+      class="pageHeader row"
+    >
+      <h2
+        data-testid="portfolio-section-header"
+      >
+        My Projects
+      </h2>
+    </div>
+    <div
+      class="row"
+      data-testid="projects-card-row"
+      id="projects-card-row"
+    >
+      <div
+        class="col-md-4"
+        data-testid="Travelers Mobile-col"
+      >
+        <div
+          class="card"
+          data-projectname="Travelers Mobile"
+          data-testid="Travelers Mobile-card"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/trvMobileApp.jpeg);"
+        />
+      </div>
+      <div
+        class="col-md-4"
+        data-testid="Noggle Boggle Trivia and Quiz Generator-col"
+      >
+        <div
+          class="card"
+          data-projectname="Noggle Boggle Trivia and Quiz Generator"
+          data-testid="Noggle Boggle Trivia and Quiz Generator-card"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/IMG_1168.jpeg);"
+        />
+      </div>
+      <div
+        class="col-md-4"
+        data-testid="Single Plant Irrigation System (SPIS)-col"
+      >
+        <div
+          class="card"
+          data-projectname="Single Plant Irrigation System (SPIS)"
+          data-testid="Single Plant Irrigation System (SPIS)-card"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/spis.jpg);"
+        />
+      </div>
+      <div
+        class="col-md-4"
+        data-testid="Photography Portfolio-col"
+      >
+        <div
+          class="card"
+          data-projectname="Photography Portfolio"
+          data-testid="Photography Portfolio-card"
+          style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/photo-port.jpg);"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
