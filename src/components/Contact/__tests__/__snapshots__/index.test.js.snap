@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="pagesParentContainer container-fluid"
+    data-testid="contact-container"
+    id="contact-container"
+  >
+    <div
+      class="pageHeader row"
+    >
+      <h2
+        data-testid="contact-form-header"
+      >
+        Contact Me
+      </h2>
+    </div>
+    <div
+      class="row"
+      id="contact-form-row"
+    >
+      <form
+        class=""
+      >
+        <div
+          class="form-row"
+        >
+          <div
+            class="form-group col"
+          >
+            <label
+              class="form-label"
+              for="formGirdName"
+            >
+              Name
+            </label>
+            <input
+              class="form-control"
+              id="formGirdName"
+              name="name"
+              placeholder="Enter Name"
+            />
+          </div>
+          <div
+            class="form-group col"
+          >
+            <label
+              class="form-label"
+              for="formGridEmail"
+            >
+              Email
+            </label>
+            <input
+              class="form-control"
+              id="formGridEmail"
+              name="email"
+              placeholder="Enter email"
+              type="email"
+            />
+          </div>
+        </div>
+        <div
+          class="form-row"
+        >
+          <label
+            class="form-label"
+          >
+            Message
+          </label>
+          <textarea
+            class="form-control"
+            data-testid="message-text-area"
+            name="message"
+            placeholder="message"
+          />
+        </div>
+        <div
+          class="form-row"
+        />
+        <button
+          class="btn btn-primary"
+          data-testid="submit-button"
+          id="submit-contact-button"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

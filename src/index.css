@@ -1,13 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary-font-color:#DCE0D9;
+  --primary-background-color: #032B43;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#header{
+  background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/Dan+Seskey-2.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#navigation-bar {
+  /* background-color: #5C80BC; */
+  color: var(--primary-font-color);
+  text-align: center;
+  /* height: 4em; */
+}
+
+#basic-navbar-nav{
+  text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.navbar-toggler{
+  background: white !important;
+
+}
+.navbar-brand{
+  color: var(--primary-font-color) !important;
+  font-size: 2em !important;
+}
+
+
+.activeSection{
+  color: white;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.inactiveSection{
+  color: var(--primary-font-color);
+  font-weight: 600;
+}
+
+#sections-container{
+  background: var(--primary-background-color); 
+  color: var(--primary-font-color);
+}
+
+.pagesParentContainer{
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+  margin-bottom: 2em !important;
+  text-align:left !important;
+  
+}
+
+.pageHeader{
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+
+#about-container{
+  text-align: left;
+  margin-left: 2em;
+  margin-right: 2em;
+
+}
+
+.aboutTextSection{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 1em !important;
+  margin-left: 1em !important;
+  font-weight: 500;
+  font-size:medium;
+
+}
+
+#about-image-section{
+  text-align: center;
+}
+
+#contact-form-row{
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#contact-container{
+  height: 100vh
+}
+
+#submit-contact-button{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.errorContainer{
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#footer-container{
+  background: var(--primary-background-color); 
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.socialFooterIconContainer{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#resume-section-description{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.anchorTag{
+  padding-left: 5px;
+}
+
+.resumeSkillTables{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.skillTableHeader{
+  font-weight: 600;
+  color: var(--primary-font-color);
+}
+
+#project-urls-container{
+  text-align: center;
+}
+
+.card{
+  background-size: cover;
+  height: 25em;
+  margin-top: 2em; 
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card-title{
+  color: var(--primary-font-color);
+  font-weight: 800;
+  text-align: center; 
+}
+
+#project-card-description{
+  color: black;
+  font-size: .8em;
+}
+
+.projectHoverContainer{
+  background: grey;
+  height: 20em; 
+  margin-top: 1em;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 50px;
+  border-style: outset;
 }

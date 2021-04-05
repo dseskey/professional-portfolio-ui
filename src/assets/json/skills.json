@@ -1,0 +1,56 @@
+{
+    "topics": [
+        {
+            "title": "Architecture",
+            "skills": [
+                "Software Architecture Professional Certificate (CMU SEI)",
+                "Three Tier Architecture",
+                "AWS Architecture",
+                "Event Driven Architecture",
+                "Mobile Architecture",
+                "Data Architecture",
+                "Security Architecture"
+            ]
+        },
+        {
+            "title": "Frontend Development",
+            "skills": [
+                "React",
+                "React Native",
+                "HTML",
+                "CSS",
+                "jQuery",
+                "JavaScript",
+                "Vue",
+                "JSP",
+                "Angular"
+            ]
+        },
+        {
+            "title": "Backend Development",
+            "skills": [
+                "Node.js",
+                "Java",
+                "C#",
+                "CSS",
+                "jQuery",
+                "Vue",
+                "JSP",
+                "Angular"
+            ]
+        },
+        {
+            "title": "Infrastructure Databases",
+            "skills": [
+                "AWS",
+                "Pivotal Cloud Foundry",
+                "MuleSoft",
+                "OpenShift",
+                "MongoDB",
+                "Cassandra",
+                "SQL",
+                "MySQL"
+            ]
+        }
+    ]
+}

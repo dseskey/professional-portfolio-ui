@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
+
+import { Container, Row} from 'react-bootstrap';
+import Header from './components/Header';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
+import {normalizePageNames} from './utils/helpers';
 
 function App() {
+  const [activePage, setActivePage] = useState('about');
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+      <Header setActivePage={setActivePage} activePage={activePage}/>
+      <Row id='sections-container'>
+        {normalizePageNames(activePage) === 'about' && <About/> }
+        {normalizePageNames(activePage) === 'portfolio' && <Portfolio/> }
+        {normalizePageNames(activePage) === 'contact' &&  <Contact/> }
+        {normalizePageNames(activePage) === 'resume' &&  <Resume/> }
+      </Row>
+      <Footer/>
+    </Container>
   );
 }
 

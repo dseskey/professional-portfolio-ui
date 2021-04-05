@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <div
+    class="col-md-4"
+    data-testid="Travelers Mobile-col"
+  >
+    <div
+      class="card"
+      data-projectname="Travelers Mobile"
+      data-testid="Travelers Mobile-card"
+      style="background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/trvMobileApp.jpeg);"
+    />
+  </div>
+</DocumentFragment>
+`;
