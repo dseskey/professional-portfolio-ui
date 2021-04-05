@@ -14,7 +14,7 @@ function Navigation(props) {
     return (
         <Col data-testid="navigation-bar" id="navigation-bar">
         <Navbar collapseOnSelect expand="lg" >
-            <Navbar.Brand eventkey="about" onClick={() => setActivePage('about')}>Dan Seskey</Navbar.Brand>
+            <Navbar.Brand id='nav-branding-name'eventkey="about" onClick={() => setActivePage('about')}>Dan Seskey</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" onSelect={(selectedKey) => setActivePage(selectedKey)}>

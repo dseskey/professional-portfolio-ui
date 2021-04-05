@@ -12,28 +12,45 @@ code {
     monospace;
 }
 
+#header{
+  background-image: url(https://s3.us-east-2.amazonaws.com/dseskey.com/images/professional-portfolio/Dan+Seskey-2.jpeg);
+  background-size: cover;
+  background-position: center;
+}
 
 #navigation-bar {
-  background-color: #5C80BC;
+  /* background-color: #5C80BC; */
   color: #DCE0D9;
+  text-align: center;
   /* height: 4em; */
 }
 
-#name-container{
-  text-align: Left;
-  font-weight: 1000;
-  vertical-align: middle;
-  margin-top: auto;
-  margin-bottom: auto;
-
+#basic-navbar-nav{
+  text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
 }
 
+.navbar-toggler{
+  background: white;
+
+}
+.navbar-brand{
+  color: #DCE0D9 !important;
+  font-size: 2em !important;
+}
+
+
 .activeSection{
-  color: red;
+  color: white;
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 .inactiveSection{
-  color: black;
+  color:#DCE0D9;
+  font-weight: 600;
 }
 
 #sections-container{
@@ -119,5 +136,5 @@ code {
 
 .skillTableHeader{
   font-weight: 600;
-  color: orange;
+  color: #DCE0D9;
 }
