@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import projectJson from '../../assets/json/projects.json';
-import {SocialIcon} from 'react-social-icons';
+import {Row, Col, Card } from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 
-function Project() {
+function Project({project}) {
     const [hoveredCard, setHoveredCard] = useState('');
     const [iconHover, setIconHover] = useState('');
+
     /*--Functions to generate each part of the project card. Although this can be done straight in the main return, this makes it easier to work with and triage--*/
     function generateCardTitle(project) {
         const { title } = project;
@@ -20,19 +20,19 @@ function Project() {
         )
     }
 
-    function handleIconMouseEvents(event, socialIconName){
-        if(event.type==='mouseover'){
+    function handleIconMouseEvents(event, socialIconName) {
+        if (event.type === 'mouseover') {
             setIconHover(socialIconName);
-        }else{
+        } else {
             setIconHover('');
         }
     }
 
-    function generateURLs(urlObj, title){
-        const {type, url} = urlObj
+    function generateURLs(urlObj, title) {
+        const { type, url } = urlObj
         return (
             <Col key={`${title}-${type}-urlCol`} >
-                <SocialIcon key={`${title}-${type}-social-icon`}  onMouseOut={(event)=>handleIconMouseEvents(event)} onMouseOver={(event) => {handleIconMouseEvents(event,`${title}-${type}`)}} fgColor={iconHover===`${title}-${type}` ? '#007bff' : ''} network={type} url={url} bgColor={iconHover===`${title}-${type}` ? '#FFF' : '#DCE0D9'} alt={type} />
+                <SocialIcon key={`${title}-${type}-social-icon`} onMouseOut={(event) => handleIconMouseEvents(event)} onMouseOver={(event) => { handleIconMouseEvents(event, `${title}-${type}`) }} fgColor={iconHover === `${title}-${type}` ? '#007bff' : ''} network={type} url={url} bgColor={iconHover === `${title}-${type}` ? '#FFF' : '#DCE0D9'} alt={type} />
             </Col>
         )
     }
@@ -45,53 +45,43 @@ function Project() {
         }
     }
     return (
-        <Container fluid data-testid='project-container' id='project-container' className='pagesParentContainer'>
-            <Row className="pageHeader">
-                <h2 data-testid='project-section-header'>My Projects</h2>
-            </Row>
-            <Row data-testid='projects-card-row' id='projects-card-row'>
-                {projectJson.projects.map((project) => {
-                    return (
-                        <Col
-                            data-testid={`${project.title}-col`} key={project.title + '-col'}
-                            md={4}>
-                            <Card
-                            data-projectname={`${project.title}`}
-                                onMouseEnter={(event) => handleCardHoverFocus(event)}
-                                onMouseLeave={(event) => handleCardHoverFocus(event)}
-                                style={{backgroundImage: `url(${project.imageSRC})`}}
-                                data-testid={`${project.title}-card`} key={project.title + '-card'}>
-                                {hoveredCard === `${project.title}-card` &&
-                                    <div className='projectHoverContainer'>
-                                        <Card.Body key={project.title + '-card-body-content'}>
-                                            {project.title &&
-                                                generateCardTitle(project)
-                                            }
-                                            {project.description &&
-                                                generateCardDescription(project)
-                                            }
-                                            <Row id='project-urls-container'>
-                                                {
-                                                    project.urls &&
-                                                    project.urls.map((urlObj) => {
-                                                        return generateURLs(urlObj,project.title)
-                                                    })
-                                                }
-                                            </Row>
+        <Col
+            data-testid={`${project.title}-col`} key={project.title + '-col'}
+            md={4}>
+            <Card
+                data-projectname={`${project.title}`}
+                onMouseEnter={(event) => handleCardHoverFocus(event)}
+                onMouseLeave={(event) => handleCardHoverFocus(event)}
+                style={{ backgroundImage: `url(${project.imageSRC})` }}
+                data-testid={`${project.title}-card`} key={project.title + '-card'}>
+                 
+                {hoveredCard === `${project.title}-card` &&
+                    <div className='projectHoverContainer'>
+                        <Card.Body key={project.title + '-card-body-content'}>
+                            {project.title &&
+                                generateCardTitle(project)
+                            }
+                            {project.description &&
+                                generateCardDescription(project)
+                            }
+                            <Row id='project-urls-container'>
+                                {
+                                    project.urls &&
+                                    project.urls.map((urlObj) => {
+                                        return generateURLs(urlObj, project.title)
+                                    })
+                                }
+                            </Row>
 
-                                        </Card.Body>
+                        </Card.Body>
 
-                                    </div>
-                                } 
-                            </Card>
-                            
-                        </Col>
+                    </div>
+                }
+            </Card>
 
-                    )
-                })}
-            </Row>
+        </Col>
 
-        </Container >
+    
     )
 }
 
