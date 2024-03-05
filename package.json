@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://dseskey.github.io/professional-portfolio-ui",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
